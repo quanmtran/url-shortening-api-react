@@ -500,6 +500,18 @@ body {
   background-color: #232127;
 }
 
+.App .cards-container .card:nth-child(1) .card-icon {
+  background-image: url("./images/icon-brand-recognition.svg");
+}
+
+.App .cards-container .card:nth-child(2) .card-icon {
+  background-image: url("./images/icon-detailed-records.svg");
+}
+
+.App .cards-container .card:nth-child(3) .card-icon {
+  background-image: url("./images/icon-fully-customizable.svg");
+}
+
 .App .cards-container .card .heading {
   font-size: 1.2em;
 }

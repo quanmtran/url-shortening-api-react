@@ -327,6 +327,18 @@ body {
 				background-color: $very-dark-violet;
 			}
 
+			&:nth-child(1) .card-icon {
+				background-image: url('./images/icon-brand-recognition.svg');
+			}
+
+			&:nth-child(2) .card-icon {
+				background-image: url('./images/icon-detailed-records.svg');
+			}
+
+			&:nth-child(3) .card-icon {
+				background-image: url('./images/icon-fully-customizable.svg');
+			}
+
 			.heading {
 				font-size: 1.2em;
 			}
@@ -373,9 +385,8 @@ body {
 					.footer-navs {
 						@include flex-box(column, stretch, stretch, 0.3rem);
 					}
-
 				}
-				
+
 				.socials {
 					@include flex-box(row, space-between, center, 1.5rem);
 
