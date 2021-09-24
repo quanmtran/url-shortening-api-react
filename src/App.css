@@ -62,6 +62,9 @@ body {
 }
 
 .App .shorten-btn {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   padding: 0.7em;
   border-radius: 5px;
 }
@@ -291,6 +294,10 @@ body {
   padding: 1rem;
   border-radius: 5px;
   margin: 0 1rem;
+}
+
+.App .shorten-link-container .shorten-link-input-container .input-container {
+  width: 100%;
 }
 
 .App .shorten-link-container .shorten-link-input-container .input-container input {
@@ -771,6 +778,21 @@ body {
   }
   .App .shorten-link-container .shorten-link-input-container {
     background-image: url("./images/bg-shorten-desktop.svg");
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    gap: 1rem;
+    padding: 1.5rem;
   }
   .App .shorten-link-container .shorten-link-output-container .output-card {
     display: -webkit-box;

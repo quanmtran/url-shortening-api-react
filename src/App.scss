@@ -76,6 +76,7 @@ body {
 	}
 
 	.shorten-btn {
+		min-width: fit-content;
 		padding: 0.7em;
 		border-radius: 5px;
 	}
@@ -211,6 +212,8 @@ body {
 			margin: 0 1rem;
 
 			.input-container {
+				width: 100%;
+
 				input {
 					height: 3rem;
 					width: 100%;
@@ -500,6 +503,8 @@ body {
 		.shorten-link-container {
 			.shorten-link-input-container {
 				background-image: url('./images/bg-shorten-desktop.svg');
+				@include flex-box(row, stretch, stretch, 1rem);
+				padding: 1.5rem;
 			}
 
 			.shorten-link-output-container {
