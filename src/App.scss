@@ -297,6 +297,7 @@ body {
 		margin: 3rem 0;
 		padding: 0 1rem;
 		position: relative;
+		text-align: center;
 
 		&::before {
 			position: absolute;
@@ -314,9 +315,8 @@ body {
 			position: relative;
 			background-color: $white;
 			border-radius: 5px;
-			padding: 1rem;
+			padding: 1.5rem;
 			padding-top: 50px;
-			text-align: center;
 
 			.card-icon {
 				height: 60px;
@@ -363,7 +363,7 @@ body {
 		text-align: center;
 
 		.heading {
-			font-size: 1.5em;
+			font-size: 2rem;
 		}
 	}
 
@@ -375,7 +375,7 @@ body {
 		& > div:first-child {
 			@include flex-box(column, stretch, center, 1rem);
 			text-align: center;
-			padding: 2rem 4rem;
+			padding: 2rem 8rem;
 
 			.footer-nav-parent-container {
 				@include flex-box(column, stretch, center, 2rem);
@@ -503,6 +503,8 @@ body {
 		}
 
 		.shorten-link-container {
+			transform: translateY(-50px);
+
 			.shorten-link-input-container {
 				background-image: url('./images/bg-shorten-desktop.svg');
 				@include flex-box(row, stretch, flex-start, 1rem);
@@ -529,6 +531,7 @@ body {
 
 		.cards-container {
 			@include flex-box(row, stretch, stretch, 50px);
+			text-align: left;
 
 			&::before {
 				top: 50%;
@@ -538,6 +541,10 @@ body {
 				transform: translate(0, -50%);
 				background-color: $cyan;
 			}
+
+			.card {
+				@include flex-box(column, flex-start, flex-start, 0.5rem);
+			}
 		}
 
 		.boost-container {
@@ -546,11 +553,11 @@ body {
 
 		footer {
 			& > div:first-child {
-				@include flex-box(row, space-between, flex-start, 1.5rem);
+				@include flex-box(row, space-between, flex-start, (2rem 5rem));
 				flex-wrap: wrap;
 
 				.footer-nav-parent-container {
-					@include flex-box(row, space-between, flex-start, 3rem);
+					@include flex-box(row, space-between, flex-start, (2rem 5rem));
 					flex-wrap: wrap;
 
 					.footer-nav-child-container {

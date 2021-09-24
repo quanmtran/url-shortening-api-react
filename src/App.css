@@ -470,6 +470,7 @@ body {
   margin: 3rem 0;
   padding: 0 1rem;
   position: relative;
+  text-align: center;
 }
 
 .App .cards-container::before {
@@ -502,9 +503,8 @@ body {
   position: relative;
   background-color: white;
   border-radius: 5px;
-  padding: 1rem;
+  padding: 1.5rem;
   padding-top: 50px;
-  text-align: center;
 }
 
 .App .cards-container .card .card-icon {
@@ -565,7 +565,7 @@ body {
 }
 
 .App .boost-container .heading {
-  font-size: 1.5em;
+  font-size: 2rem;
 }
 
 .App footer {
@@ -590,7 +590,7 @@ body {
           align-items: center;
   gap: 1rem;
   text-align: center;
-  padding: 2rem 4rem;
+  padding: 2rem 8rem;
 }
 
 .App footer > div:first-child .footer-nav-parent-container {
@@ -791,6 +791,10 @@ body {
   .App .header-container .hero-container .intro-container div {
     text-align: left;
   }
+  .App .shorten-link-container {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
   .App .shorten-link-container .shorten-link-input-container {
     background-image: url("./images/bg-shorten-desktop.svg");
     display: -webkit-box;
@@ -862,6 +866,7 @@ body {
         -ms-flex-align: stretch;
             align-items: stretch;
     gap: 50px;
+    text-align: left;
   }
   .App .cards-container::before {
     top: 50%;
@@ -871,6 +876,22 @@ body {
     -webkit-transform: translate(0, -50%);
             transform: translate(0, -50%);
     background-color: #2acfcf;
+  }
+  .App .cards-container .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 0.5rem;
   }
   .App .boost-container {
     background-image: url("./images/bg-boost-desktop.svg");
@@ -889,7 +910,7 @@ body {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    gap: 1.5rem;
+    gap: 2rem 5rem;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -907,7 +928,7 @@ body {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    gap: 3rem;
+    gap: 2rem 5rem;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
