@@ -76,9 +76,11 @@ body {
 	}
 
 	.shorten-btn {
+		height: 3rem;
 		min-width: fit-content;
-		padding: 0.7em;
+		padding: 1em;
 		border-radius: 5px;
+		@include flex-box(row, center, center, 0);
 	}
 
 	.copy-btn {
@@ -503,7 +505,7 @@ body {
 		.shorten-link-container {
 			.shorten-link-input-container {
 				background-image: url('./images/bg-shorten-desktop.svg');
-				@include flex-box(row, stretch, stretch, 1rem);
+				@include flex-box(row, stretch, flex-start, 1rem);
 				padding: 1.5rem;
 			}
 
